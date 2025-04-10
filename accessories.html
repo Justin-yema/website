@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Cycle Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-section">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bicycles.html">Bicycles</a></li>
+                <li><a href="accessories.html" class="active">Accessories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-container">
+                <img src="/shopping-cart (1).png" alt="Cart" class="cart-icon">
+                <div class="cart">$0.00</div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <aside class="sidebar">
+            <div class="search-box">
+                <h3>Search</h3>
+                <input type="text" placeholder="Search products...">
+                <button>🔍</button>
+            </div>
+            <div class="filter-section">
+                <h3><i>Filter by price</i></h3>
+                <input type="range" min="25" max="350">
+                <div class="price-range">
+                    <span>$25</span> <span>$350</span>
+                </div>
+                <button class="apply-btn">APPLY</button>
+            </div>
+
+            <div class="category-filter">
+                <h3><i>Filter by categories</i></h3>
+                <ul>
+                    <li><a href="#">Accessories (10)</a></li>
+                    <li><a href="#">Bicycles (4)</a></li>
+                </ul>
+            </div>
+            <div class="order-summary">
+                <h1>Order Summary</h1>
+                
+                <!-- Cart items will be dynamically added here -->
+                <div class="cart-items" id="order-items"></div>
+        
+                <!-- Total amount for the order -->
+                <div class="order-total">
+                    <h2>Total: <span id="order-total">$0.00</span></h2>
+                </div>
+        
+                <!-- Submit Order Button -->
+                <button id="submit-order">Submit Order</button>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="accessories-section">
+            <h1 class="accessories-title">Bicycle Accessories</h1>
+         <div class="accessories-list">
+            <div class="accessory">
+                <img src="g pink.jpg" alt="Bicycle Gloves Pink">
+                <p><strong>BICYCLE GLOVES PINK</strong></p>
+                <p>$25.00 – $32.00</p>
+                <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="accessory">
+                <img src="g blue.jpg" alt="Bicycle Gloves Blue">
+                <p><strong>BICYCLE GLOVES BLUE</strong></p>
+                <p>$27.00 – $35.00</p>
+                <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="accessory">
+                <img src="g yellow.jpg" alt="Bicycle Gloves Yellow">
+                <p><strong>BICYCLE GLOVES YELLOW</strong></p>
+                <p>$30.00 – $40.00</p>
+                <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="accessory">
+                <img src="g red.jpg" alt="Bicycle Gloves Red">
+                <p><strong>Bicycle Gloves Red</strong></p>
+                <p>$125.00 – $135.00</p>
+                <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="accessory">
+                <img src="g gold.jpg" alt="Bicycle Gloves Gold">
+                <p><strong>Bicycle Gloves Gold</strong></p>
+                <p>$135.00 – $160.00</p>
+                <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="accessory">
+                <img src="h blue.jpg" alt="Bicycle Helmet Sky Blue">
+                <p><strong>BICYCLE HELMET SKY BLUE</strong></p>
+                <p>$150.00 – $175.00</p>
+                <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="accessory">
+                <img src="h red.jpg" alt="Bicycle Lock">
+                <p><strong>BICYCLE LOCK</strong></p>
+                <p>$15.00 – $25.00</p>
+                <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="accessory">
+                <img src="h yellow.jpg" alt="Bicycle Pump">
+                <p><strong>BICYCLE PUMP</strong></p>
+                <p>$20.00 – $30.00</p>
+                <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="accessory">
+                <img src="h pink.jpg" alt="Bicycle Lights">
+                <p><strong>BICYCLE LIGHTS</strong></p>
+                <p>$10.00 – $20.00</p>
+                <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="accessory">
+                <img src="h black.jpg" alt="Bottle Holder">
+                <p><strong>BOTTLE HOLDER</strong></p>
+                <p>$12.00 – $18.00</p>  <select>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+         </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <h3>USEFUL LINKS</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bicycles.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h3>OUR COLLECTION</h3>
+            <ul>
+                <li><a href="/bicycles.html">Mountain Bikes</a></li>
+                <li><a href="/bicycles.html">City Bikes</a></li>
+                <li><a href="/bicycles.html">Specialty Bikes</a></li>
+                <li><a href="/bicycles.html">Electric Bikes</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h3>ACCOUNT</h3>
+            <ul>
+                <li><a href="/contact.html">Customer Login</a></li>
+                <li><a href="/contact.html">Dealer Login</a></li>
+                <li><a href="/contact.html">Addresses</a></li>
+                <li><a href="/contact.html">Payment Methods</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/cycleshop.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Bike Shop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="bicycles.html" class="active">BICYCLES</a></li>
+                <li><a href="accessories.html">ACCESSORIES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="cart-container">
+                <img src="/shopping-cart (1).png" alt="Cart" class="cart-icon">
+                <div class="cart">$0.00</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h3>Search</h3>
+            <input type="text" placeholder="Search products...">
+            <h3>Filter by Categories</h3>
+            <ul>
+                <li><a href="#">Accessories (10)</a></li>
+                <li><a href="#">Bicycles (4)</a></li>
+            </ul>
+            <div class="order-summary">
+                <h1>Order Summary</h1>
+                
+                <!-- Cart items will be dynamically added here -->
+                <div class="cart-items" id="order-items"></div>
+        
+                <!-- Total amount for the order -->
+                <div class="order-total">
+                    <h2>Total: <span id="order-total">$0.00</span></h2>
+                </div>
+        
+                <!-- Submit Order Button -->
+                <button id="submit-order">Submit Order</button>
+            </div>
+        </aside>
+
+        <section class="products">
+            <h1>BICYCLES</h1>
+            <div class="product-list">
+                <div class="product">
+                    <img src="/download.jpg" alt="Product Image ">
+                    <p>Bicycles</p>
+                    <h2>KRYO X26 MTB - MODEL K</h2>
+                    <p>$350.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/x.jpg" alt="Product Image">
+                    <p>Bicycles</p>
+                    <h2>KRYO X26 MTB - MODEL X</h2>
+                    <p>$350.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/y.jpg" alt="Product Image">
+                    <p>Bicycles</p>
+                    <h2>KRYO X26 MTB - MODEL Y</h2>
+                    <p>$350.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/z.jpg" alt="Product Image">
+                    <p>Bicycles</p>
+                    <h2>KRYO X26 MTB - MODEL Z</h2>
+                    <p>$350.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <h3>USEFUL LINKS</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bicycles.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h3>OUR COLLECTION</h3>
+            <ul>
+                <li><a href="/bicycles.html">Mountain Bikes</a></li>
+                <li><a href="/bicycles.html">City Bikes</a></li>
+                <li><a href="/bicycles.html">Specialty Bikes</a></li>
+                <li><a href="/bicycles.html">Electric Bikes</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h3>ACCOUNT</h3>
+            <ul>
+                <li><a href="/contact.html">Customer Login</a></li>
+                <li><a href="/contact.html">Dealer Login</a></li>
+                <li><a href="/contact.html">Addresses</a></li>
+                <li><a href="/contact.html">Payment Methods</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/cycleshop.js"></script>
+</body>
+</html>

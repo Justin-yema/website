@@ -1,0 +1,868 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.top-section {
+    position: fixed; /* Makes it stay on top */
+    top: 0; /* Stick it to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: black; /* Or any color */
+    z-index: 1000; /* Ensures it stays above other elements */
+    padding: 15px 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: red;
+}
+.cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    width: 24px; /* Adjust cart size */
+    height: auto;
+    margin-right: 50px;
+}
+
+.cart {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button{
+    color: white;
+    text-decoration: none;
+}
+.top-section {
+    background: linear-gradient(to right, black 50%, red 50%);
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 50px;
+}
+.top-section h1, .top-section h2 {
+    margin: 10px 0;
+}
+.top-section button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.top-section {
+    position: relative; /* Ensure it doesn't overlap other sections */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+    color: white;
+}
+
+.banner {
+    max-width: 80%; /* Adjust the width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.banner h1, .banner h2, .banner p {
+    margin: 10px 0;
+    color: white;
+}
+
+.banner button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.middle-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('/bicycle-1.jpg') no-repeat center center/cover;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.middle-section h1, .middle-section h2 {
+    margin: 10px 0;
+    color: white;
+}
+.middle-section button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+}
+
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 5px; /* Espasyo sa pagitan ng icon at text */
+    color: #fff; /* Kung dark ang background mo */
+}
+
+.cart-icon {
+    width: 25px;
+    height: auto;
+    padding-left: auto;
+}
+
+.cart {
+    font-weight: bold;
+    font-size: 16px;
+    padding-right: 80px;
+    color: white;
+    justify-content: end;
+}
+.order-summary {
+    background-color: #fff;  /* White background for the order summary section */
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;  /* Rounded corners for a smooth look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #333;  /* Dark text color for titles */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;  /* Dark text color for the total amount */
+    margin-bottom: 20px;
+}
+
+#order-total {
+    font-weight: bold;
+    color: #2d87f0;  /* Blue color for the total price */
+}
+
+/* Cart Items Section */
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.cart-item span {
+    margin-right: 20px;
+}
+
+.cart-item button {
+    background-color: #2d87f0;  /* Blue button background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #1a60b7;  /* Darker blue on hover */
+}
+
+/* Submit Order Button */
+#submit-order {
+    background-color: #28a745;  /* Green background for the submit button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.0em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#submit-order:hover {
+    background-color: #218838;  /* Darker green on hover */
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    padding: 120px 20px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Sidebar */
+aside {
+    width: 20%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+aside input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 8px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+aside ul li a:hover {
+    color: red;
+}
+
+/* Product Section */
+.products {
+    width: 75%;
+    margin-left: 20px;
+}
+
+.products h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d93030;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+}
+
+.product p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d93030;
+}
+
+.product button {
+    background-color: #d93030;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #b82323;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+/* Accessories Page Layout */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 20px 50px;
+    gap: 20px; /* Adds space between the sidebar and accessories section */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.sidebar ul li a:hover {
+    color: red;
+}
+.main-content {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+/* Accessories Section */
+.accessories-section {
+    width: 80%; /* Adjusted the width to 80% to balance with the sidebar */
+    padding-left: 20px;
+}
+
+.accessories-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d93030;
+    margin-bottom: 20px;
+}
+
+/* Accessories Grid */
+.accessories-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+/* Accessories Card */
+.accessory {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.accessory:hover {
+    transform: translateY(-5px);
+}
+
+.accessory img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.accessory h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+}
+
+.accessory p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d93030;
+}
+
+/* Dropdown for Size Selection */
+.accessory select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Add to Cart Button */
+.accessory button {
+    background-color: #d93030;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.accessory button:hover {
+    background-color: #b82323;
+}
+/* Navbar */
+.navbar {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a.active {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.about-container li{
+    visibility: hidden; 
+}
+.about-content {
+    margin-bottom: 30px;
+}
+.process-section {
+    text-align: center;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    background-color: orangered;
+  }
+  
+  .section-title {
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+  
+  .process-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: black;
+  }
+  
+  .step {
+    max-width: 250px;
+    text-align: left;
+  }
+  
+  .step-number {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .step-title {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  
+  .step p {
+    margin-top: 10px;
+    color: black;
+    line-height: 1.5;
+  }
+  
+/* Contact Page */
+.contact-banner {
+    background: url('contact-banner.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 100px;
+    
+}
+
+.contact-form {
+    flex: 1;
+    padding-right: 20px;
+}
+.contact-form h2{
+    padding-bottom: 20px;
+    color: wh;
+}
+
+.contact-info {
+    flex: 1;
+    background: linear-gradient(to right, #444, #222); /* Smooth dark gradient */
+    color: #fff; 
+    padding: 20px;
+    border-radius: 5px;
+    padding-left: 50px;
+}
+.contact-info h2{
+    color: white;
+}
+
+/* Contact Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: darkred;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+.navbar {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ensures horizontal alignment */
+    justify-content: center; /* Centers links */
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: red;
+}
+
+/* Highlight active page */
+.navbar ul li a.active {
+    color: red;
+    font-weight: bold;
+}
+@media (max-width: 1024px) {
+    nav {
+        padding: 15px 30px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .top-section {
+        padding: 100px 20px 80px;
+    }
+
+    .middle-section {
+        padding: 80px 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cart {
+        margin-top: 10px;
+    }
+
+    .top-section {
+        padding: 80px 15px;
+        margin-top: 60px;
+    }
+
+    .middle-section {
+        padding: 60px 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section {
+        padding: 60px 10px;
+        margin-top: 50px;
+    }
+
+    .middle-section {
+        padding: 50px 8px;
+    }
+
+    .top-section h1, .top-section h2 {
+        font-size: 20px;
+    }
+
+    .middle-section h1, .middle-section h2 {
+        font-size: 18px;
+    }
+
+    .top-section button, .middle-section button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    .cart {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-section{
+        flex-direction: column;
+        width: auto;
+    }
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
